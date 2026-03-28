@@ -1,0 +1,16 @@
+apt install -y ufw
+
+# Autoriser SSH pour ne pas se couper
+ufw allow ssh
+ufw allow 25/tcp
+ufw allow 80/tcp
+ufw allow 443/tcp
+ufw allow 587/tcp
+ufw allow 993/tcp
+ufw allow 995/tcp
+
+# Activer le pare-feu
+ufw enable
+
+# Vérifier les règles
+ufw status verbose
