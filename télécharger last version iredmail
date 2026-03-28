@@ -3,3 +3,10 @@ wget -c https://github.com/iredmail/iRedMail/releases/download/1.7.1/iRedMail-1.
 
 # Vérifier que le téléchargement s'est bien passé
 ls -lh iRedMail-1.7.1.tar.gz
+
+
+# Télécharger le fichier de somme de contrôle
+wget https://github.com/iredmail/iRedMail/releases/download/1.7.1/iRedMail-1.7.1.tar.gz.sha256
+
+# Vérifier l'intégrité
+sha256sum -c iRedMail-1.7.1.tar.gz.sha256
