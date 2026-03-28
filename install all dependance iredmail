@@ -1,0 +1,7 @@
+apt update
+apt install -y \
+    wget \
+    curl \
+    tar \
+    gzip \
+    bzip2
