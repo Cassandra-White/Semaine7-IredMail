@@ -1,0 +1,6 @@
+# Exemple de commande d'insertion (à adapter avec tes variables)
+mysql -u root -p"TON_MOT_DE_PASSE" vmail <<EOF
+INSERT INTO mailbox (username, password, name, storagebasedir, storagenode, maildir, quota, domain, active, created) 
+VALUES ('$email', '{SSHA512}MOT_DE_PASSE_PROVISOIRE', '$email', '/var/vmail', 'vmail01', '$email/', 1024, 'billu.com', 1, NOW());
+INSERT INTO alias (address, goto, domain, active) VALUES ('$email', '$email', 'billu.com', 1);
+EOF
