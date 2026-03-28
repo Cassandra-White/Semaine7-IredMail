@@ -1,0 +1,8 @@
+# Vérifier l'état de tous les services iRedMail
+systemctl status postfix
+systemctl status dovecot
+systemctl status nginx
+systemctl status mariadb
+systemctl status amavis
+systemctl status clamav-daemon  # si ClamAV installé
+systemctl status spamassassin   # si SpamAssassin installé
