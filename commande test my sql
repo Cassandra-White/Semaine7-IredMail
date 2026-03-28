@@ -1,0 +1,1 @@
+mysql -u root -p'azerty1*' vmail -e "INSERT INTO mailbox (username, password, name, storagebasedirectory, storagenode, maildir, quota, domain, active, created) VALUES ('test.error@billu.com', 'pass', 'Test', '/var/vmail', 'vmail1', 'test/', 1024, 'billu.com', 1, NOW());"
