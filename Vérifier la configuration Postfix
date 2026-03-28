@@ -1,0 +1,1 @@
+postconf -n | grep -E "mydomain|myhostname|mydestination|virtual"
