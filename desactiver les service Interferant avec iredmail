@@ -1,0 +1,14 @@
+# Vérifier si Postfix est installé
+dpkg -l | grep postfix
+# Si une ligne apparaît, désinstalle-le :
+# apt remove --purge postfix -y
+
+# Vérifier si Nginx est installé
+dpkg -l | grep nginx
+# Si une ligne apparaît :
+# apt remove --purge nginx nginx-common -y
+
+# Vérifier si MariaDB/MySQL est installé
+dpkg -l | grep -E "mariadb|mysql"
+# Si une ligne apparaît :
+# apt remove --purge mariadb-server mysql-server -y
