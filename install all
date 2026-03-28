@@ -1,0 +1,14 @@
+apt install -y \
+    curl \
+    wget \
+    net-tools \
+    dnsutils \
+    vim \
+    nano \
+    htop \
+    tree \
+    unzip \
+    git \
+    ca-certificates \
+    gnupg \
+    lsb-release
