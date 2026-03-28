@@ -1,0 +1,6 @@
+ldapsearch -x \
+  -H ldap://172.16.100.1 \
+  -D "CN=iRedMail Service,OU=Utilisateurs,OU=France,OU=Paris,OU=BillU,DC=billu,DC=local" \
+  -w 'Azerty1*,,,,' \
+  -b "OU=Utilisateurs,OU=France,OU=Paris,OU=BillU,DC=billu,DC=local" \
+  "(objectClass=user)" mail
